@@ -37,7 +37,7 @@ header span {
     min-height: 100vh;
     display: flex;
     flex-direction:column;
-    justify-content:center;
+    align-items: center;
     /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
 }
 
@@ -45,6 +45,7 @@ header span {
     display: flex;
     align-items:center;
     justify-content: center;
+    
     /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
 }
 
@@ -74,6 +75,7 @@ header span {
 }
 
 .about-section .wrapper {
+    gap: 60px;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -102,6 +104,7 @@ select:hover,
 
 
 .info-wrapper {
+    gap: 16px;
     display: flex;
     flex-direction: row;
     /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
@@ -120,6 +123,7 @@ select:hover,
 
 .frameworks-list,
 .books-list {
+    gap: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -140,6 +144,7 @@ select:hover,
 }
 
 .skills {
+    gap: 20px;
     display: flex;
     flex-direction: column;
     /* 📍 Свойства flexbox для расположения элементов с классом .label */
@@ -208,8 +213,8 @@ footer {
     background-color: rgba(163, 167, 255, 0.3);
     padding: 26px 0;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     /* 📍 Свойство для расположения ссылки горизонтально по центру */
 }
 
@@ -221,6 +226,6 @@ footer {
 }
 
 .footer-link:hover {
-    
+    text-decoration: underline;
     /* 📍 Стили для ссылки при наведении курсора */
 }
